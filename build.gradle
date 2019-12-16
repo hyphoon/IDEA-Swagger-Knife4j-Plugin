@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.hyphoon'
-version '0.1-SNAPSHOT'
+version '0.1.2-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
@@ -22,10 +22,15 @@ dependencies {
 intellij {
     version '2019.3'
     plugins 'java'
+    pluginName 'Swagger-Knife4j-JavaDoc-Annotation-Toolkit'
 }
 
 patchPluginXml {
     changeNotes """
       Add change notes here.<br>
       <em>most HTML tags may be used</em>"""
+}
+
+publishPlugin {
+    token PUBLISH_TOKEN
 }
