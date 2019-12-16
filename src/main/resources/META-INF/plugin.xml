@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>com.hyphoon.IDEA-Swagger-Knife4j-Plugin</id>
+    <name>Swagger-Knife4j-JavaDoc-Annotation-Toolkit</name>
+    <vendor email="HyphoonLee@tom.com" url="https://github.com/hyphoon/IDEA-Swagger-Knife4j-Plugin">HyphoonLee</vendor>
+
+    <description><![CDATA[
+    Swagger and Knife4j toolkit<br>
+    <em>Select "Swagger Model Annotation" from the right-click menu "Generate ..." and select fields in the popup window to generate Swagger @ApiModelProperty annotations for them, and automatically fill in the JavaDoc comments, eliminating the annoying copying process. For String fields, also try to get the maximum field length from @Size or @Column and mark it with parentheses in the comment.</em>
+
+    Swagger和Knife4j工具包<br>
+    <em>右键菜单"Generate..."中选择"Swagger Model Annotation", 在弹出窗口中选择字段, 即可为它们生成Swagger的 @ApiModelProperty 注解, 并自动填入JavaDoc的注释，省去烦人的拷贝过程。对于 String 字段， 还尝试从 @Size 或 @Column 中知道字段最大长度，并在注释中通过括号标注。</em>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="SwaggerKnife4j.GenerateSwaggerAnnotationAction"
+                class="com.hyphoon.idea.action.GenerateSwaggerModelAnnotationAction" text="Swagger Model Annotation"
+                description="Generate Swagger Model Annotation">
+            <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="GenerateGroup"/>
+        </action>
+    </actions>
+</idea-plugin>
