@@ -1,3 +1,4 @@
+<!-- Plugin description -->
 ## IDEA-Swagger-Knife4j-Plugin
 Quickly generate [Swagger](https://io.swagger) 和 [Knife4j](https://doc.xiaominfo.com/) annotation IDEA plugins.
 
@@ -29,3 +30,4 @@ Quickly generate [Swagger](https://io.swagger) 和 [Knife4j](https://doc.xiaomin
 - HyphoonLee@tom.com
 
 ### License
+<!-- Plugin description end -->
