@@ -1,6 +1,10 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
 # IntelliJ Platform Plugin Template Changelog
+## [2022.1.2]
+### Changed
+- unset pluginUntilBuild
+
 ## [2022.1.1]
 ### Changed
 - change version and support new version of idea
