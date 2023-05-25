@@ -1,6 +1,10 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
 # IntelliJ Platform Plugin Template Changelog
+## [2023.1.2]
+### Changed
+- Swagger v3 support
+
 ## [2022.1.2]
 ### Changed
 - unset pluginUntilBuild

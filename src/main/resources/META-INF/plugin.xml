@@ -6,12 +6,16 @@
     <description><![CDATA[
     Swagger and Knife4j toolkit
     <ul>
-        <li>Select "Swagger Model Annotation" from the right-click menu "Generate ..." and select fields in the popup window to generate Swagger @ApiModelProperty annotations for them, and automatically fill in the JavaDoc comments, eliminating the annoying copying process. For String fields, also try to get the maximum field length from @Size or @Column and mark it with parentheses in the comment.</li>
+        <li>Select "Swagger Model Annotation" from the right-click menu "Generate ..." and select fields in the popup window to generate Swagger @ApiModelProperty annotations for them, and automatically fill in the JavaDoc comments, eliminating the annoying copying process. </li>
+        <li>Select "Generate Swagger V3 Schema Annotation" from the right-click menu "Generate ..." and select fields in the popup window to generate Swagger V3 @Schema annotations for them, and automatically fill in the JavaDoc comments, eliminating the annoying copying process. </li>
+        <li>For String fields, also try to get the maximum field length from @Size or @Column and mark it with parentheses in the comment.</li>
     </ul>
     <br/>
     Swagger和Knife4j工具包
     <ul>
         <li>右键菜单"Generate..."中选择"Swagger Model Annotation", 在弹出窗口中选择字段, 即可为它们生成Swagger的 @ApiModelProperty 注解, 并自动填入JavaDoc的注释，省去烦人的拷贝过程。对于 String 字段， 还尝试从 @Size 或 @Column 中知道字段最大长度，并在注释中通过括号标注。</li>
+        <li>右键菜单"Generate..."中选择"Generate Swagger V3 Schema Annotation", 在弹出窗口中选择字段, 即可为它们生成Swagger V3 的 @Schema 注解, 并自动填入JavaDoc的注释，省去烦人的拷贝过程。</li>
+        <li>对于 String 字段， 还尝试从 @Size 或 @Column 中知道字段最大长度，并在注释中通过括号标注。</li>
     </ul>
     ]]></description>
 
@@ -29,6 +33,11 @@
         <action id="SwaggerKnife4j.GenerateSwaggerAnnotationAction"
                 class="com.hyphoon.idea.action.GenerateSwaggerModelAnnotationAction" text="Swagger Model Annotation"
                 description="Generate Swagger Model Annotation">
+            <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="GenerateGroup"/>
+        </action>
+        <action id="SwaggerKnife4j.GenerateSwaggerV3AnnotationAction"
+                class="com.hyphoon.idea.action.GenerateSwagger3SchemaAnnotationAction" text="Swagger V3 Model Annotation"
+                description="Generate Swagger V3 Schema Annotation">
             <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="GenerateGroup"/>
         </action>
     </actions>

@@ -7,6 +7,7 @@ import com.intellij.psi.javadoc.PsiDocComment;
 import com.intellij.psi.javadoc.PsiDocToken;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.regex.Pattern;
 
 /**
@@ -55,8 +56,10 @@ public abstract class AbstractGenerator {
         String packageName = importClassName.substring(0, importClassName.lastIndexOf("."));
         if (importList.findSingleClassImportStatement(importClassName) == null && importList.findOnDemandImportStatement(packageName) == null) {
             PsiClass importClass = this.elementFactory.createTypeByFQClassName(importClassName).resolve();
-            PsiImportStatement importStatement = this.elementFactory.createImportStatement(importClass);
-            ((PsiJavaFileImpl) ownerClass.getParent()).getImportList().add(importStatement);
+            if (Objects.nonNull(importClass)) {
+                PsiImportStatement importStatement = this.elementFactory.createImportStatement(importClass);
+                ((PsiJavaFileImpl) ownerClass.getParent()).getImportList().add(importStatement);
+            }
         }
     }
 
