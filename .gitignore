@@ -34,3 +34,4 @@ temp/
 /gradle/
 gradlew
 gradlew.bat
+/.intellijPlatform/

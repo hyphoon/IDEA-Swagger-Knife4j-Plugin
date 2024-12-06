@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.hyphoon.IDEA-Swagger-Knife4j-Plugin</id>
     <name>Swagger-Knife4j-JavaDoc-Annotation-Toolkit</name>
-    <vendor email="HyphoonLee@tom.com" url="https://github.com/hyphoon/IDEA-Swagger-Knife4j-Plugin">HyphoonLee</vendor>
+    <vendor email="HyphoonLee@163.com" url="https://github.com/hyphoon/IDEA-Swagger-Knife4j-Plugin">HyphoonLee</vendor>
 
     <description><![CDATA[
     Swagger and Knife4j toolkit
