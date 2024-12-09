@@ -4,6 +4,12 @@
 
 ## Unreleased
 
+## 2024.3.3
+
+### Changed
+
+- change version and support new version of idea
+
 ## 2024.3.1
 
 ### Changed
